@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5EFDFF8F"
+    tools:context=".UpdateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bleu"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Modifier un article"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/updateImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/uploadimage" />
+
+                <EditText
+                    android:id="@+id/update_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Nom d'article"
+                    android:importantForAutofill="no"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/bleu" />
+
+                <EditText
+                    android:id="@+id/update_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="La description"
+                    android:padding="16dp"
+                    android:textColor="@color/bleu" />
+
+                <EditText
+                    android:id="@+id/update_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Entrez le code de l'article"
+                    android:padding="16dp"
+                    android:textColor="@color/bleu" />
+
+                <Spinner
+                    android:id="@+id/updateCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:padding="16dp" />
+
+                <EditText
+                    android:id="@+id/update_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Quantité"
+                    android:padding="16dp"
+                    android:textColor="@color/bleu" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/update_prix"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Prix"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    />
+                <Button
+                    android:id="@+id/modifieButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/bleu"
+                    android:text="Enregistrer"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

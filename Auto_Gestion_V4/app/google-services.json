@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926831381816",
+    "project_id": "automobilegestion-fdd22",
+    "storage_bucket": "automobilegestion-fdd22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926831381816:android:187f59c6b14771ca2dc5cd",
+        "android_client_info": {
+          "package_name": "com.example.auto_gestion_v4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926831381816-otqpn83t11voddcln40f9q7l1uenugac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvTObrWV0gLnsQDzxr6pezLR86JrKeogE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926831381816-otqpn83t11voddcln40f9q7l1uenugac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

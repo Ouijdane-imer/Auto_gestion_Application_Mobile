@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5EFDFF8F"
+    tools:context=".UploadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bleu"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Ajouter un article"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/uploadimage"
+                    android:id="@+id/updateImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/upload_title"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:maxLines="1"
+                    android:hint="Nom d'article"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    android:importantForAutofill="no"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/upload_desc"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="La description"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/upload_code"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Entrez le code de l'article"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    />
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/upload_quantity"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Quantité"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/upload_prix"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Prix"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/bleu"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Enregistrer"
+                    android:id="@+id/saveButton"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@color/bleu"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
